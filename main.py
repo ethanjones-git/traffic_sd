@@ -37,7 +37,7 @@ df['address_full']=df[ad[0]] + " " + df[ad[1]]
 
 
 
-len(df['address_full'])
+len(df['address_full'].unique())
 locator = geopy.Nominatim(user_agent= "myGeocoder",timeout=3)
 
 lat = []
